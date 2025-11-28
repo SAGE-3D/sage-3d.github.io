@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Evaluating mathematical reasoning of foundation models in visual contexts">
+  <meta name="keywords" content="MathVista, Math Vista">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SAGE-3D</title>
+
+  <link rel="icon" href="./static/images/icon.png">
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="stylesheet" href="./static/css/leaderboard.css">
+
+  <script type="text/javascript" src="static/js/sort-table.js" defer></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/explorer-index.js"></script>
+  <script src="./static/js/question_card.js"></script>
+</head>
+<body>
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title is-bold">
+            <img src="static/images/icon.png" style="width:1em;vertical-align: middle" alt="Logo"/>
+            <span class="mathvista" style="vertical-align: middle">SAGE-3D</span>
+            </h1>
+          <h2 class="subtitle is-3 publication-subtitle" style="font-size: 26px;">
+            Towards Physically Executable 3D Gaussian for Embodied Navigation
+          </h2>
+          <div class="is-size-5 publication-authors">
+            <!-- <span class="author-block">Anonymous</span> -->
+
+           <span class="author-block">
+            <a href="None">Bingchen Miao</a><sup style="color:#1cc824;">1</sup><sup>,</sup><sup style="color:#ffac33;">2</sup>,</span>
+           <span class="author-block">
+             <a href="None">Rong Wei</a><sup style="color:#ffac33;">2</sup>,</span>
+           <span class="author-block">
+             <a href="None">Zhiqi Ge</a><sup style="color:#1cc824;">1</sup>,</span>
+           <span class="author-block">
+             <a href="None">Xiaoquan Sun</a><sup style="color:#1cc824;">2</sup><sup>,</sup><sup style="color:#ffac33;">3</sup>,</span>
+           <span class="author-block">
+             <a href="None">Shiqi Gao</a><sup style="color:#1cc824;">1</sup>,</span>
+           <span class="author-block">
+            <a href="None">Jingzhe Zhu</a><sup style="color:#1cc824;">1</sup>,</span><br>
+          <span class="author-block">
+           <a href="None">Renhan Wang</a><sup style="color:#ffac33;">2</sup>,</span>
+          <span class="author-block">
+            <a href="None">Siliang Tang</a><sup style="color:#1cc824;">1</sup>,</span>
+          <span class="author-block">
+            <a href="None">Jun Xiao</a><sup style="color:#ac33ff;">1</sup>,</span>
+          <span class="author-block">
+            <a href="None">Rui Tang</a><sup style="color:#ac33ff;">2</sup>,</span>
+          <span class="author-block">
+            <a href="None">Juncheng Li</a><sup style="color:#1cc824;">1</sup><sup style="font-family: 'Times New Roman';">✉</sup></span>
+          </div>
+         <div class="is-size-5 publication-authors">
+           <span class="author-block"><sup style="color:#1cc824;">1</sup>Zhejiang University,</span>
+           <span class="author-block"><sup style="color:#ffac33">2</sup>Manycore Tech Inc.,</span>
+           <span class="author-block"><sup style="color:#ac33ff">3</sup>Huazhong University of Science and Technology</span><br>
+           <span class="author-block"><sup style="font-family: 'Times New Roman';">✉</sup>Corresponding Author</span><br>
+        </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2510.21307"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- Code Link. -->
+              <span class="link-block">
+                <a href="https://github.com/Galery23/SAGE-3D_Official"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+              <!-- Dataset Link. -->
+              <span class="link-block">
+                <a href="https://huggingface.co/datasets/spatialverse/InteriorGS"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>InteriorGS</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>SAGE-3D Collision Mesh</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>SAGE-3D Scene Data</span>
+                </a>
+              </span>
+              <span class="link-block">
+                <a href=""
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <!-- <i class="far fa-images"></i> -->
+                      <p style="font-size:18px">🤗</p>
+                      <!-- 🔗 -->
+                  </span>
+                  <span>SAGE-3D VLN Data</span>
+                </a>
+              </span>
+              <!-- Eval.AI Link -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container" style="margin-bottom: 1vh;">
+    <!-- Introduction -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Introduction</h2>
+        <div class="content has-text-justified">
+
+          <p>
+          Vision-and-Language Navigation (VLN) relies heavily on the sim-to-real paradigm, and 3D Gaussian Splatting (3DGS) stands out for its photorealistic real-time rendering ability, which is crucial for narrowing the sim-to-real gap. However, existing 3DGS lacks fine-grained object semantics and physical executability, making it unsuitable for practical VLN tasks.
+          </p>
+          <p>
+          We propose <img src="static/images/icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> <span class="mathvista">SAGE-3D</span>, <b>a novel paradigm that upgrades 3DGS into an executable environment foundation aligned with semantics and physics</b>. It consists of two core components: <b>Object-Level Semantic Grounding</b> that enriches 3DGS with dense object-level annotations, and <b>Physics-Aware Execution Jointing</b> that embeds collision bodies and builds rich physical interaction interfaces.
+          </p>
+          <p>
+          We also release two key resources to advance related research: <img src="static/images/spatialverse_icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> <span class="mathvista">InteriorGS</span>, a dataset with <b>1,000 annotated indoor 3DGS scenes</b> that covers mostly furnished indoor environments plus venues like concert halls and amusement parks, totaling over <b>554k object instances across 755 categories</b>; and <img src="static/images/icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> <span class="mathvista">SAGE-Bench</span>, the first 3DGS - based VLN benchmark featuring <b>2 million trajectory-instruction pairs</b>, a hierarchical instruction pipeline, three novel navigation continuity metrics, and <b>554k detailed collision bodies</b>. Experiments verify that SAGE-3D enhances model generalizability significantly, providing a solid foundation for embodied navigation research.
+          </p>
+
+
+        </div>        
+      </div>
+    </div>
+    <!--/ Abstract. -->
+</div>
+</section>
+
+<!-- DATASET SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 mathvista">
+    <img src="static/images/icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+    <span class="mathvista">SAGE-3D Data</span>
+  </h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+             Vision-and-Language Navigation (VLN) relies on environment foundations that bridge simulation and real-world execution — and 3D Gaussian Splatting (3DGS) has emerged as a promising candidate for its photorealistic real-time rendering. However, traditional 3DGS falls short as an embodied learning base: it lacks fine-grained semantic annotations (e.g., object-level labels) and physical executability (evidenced by issues like agent penetration), failing to support practical embodied agent interaction and navigation.
+            </p>
+            <p>
+
+                To address this gap, we build two core resources that upgrade 3DGS into a semantically and physically aligned embodied environment:
+                <li>
+                  <b><img src="static/images/spatialverse_icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> <span class="mathvista">InteriorGS</span>:</b> A dataset of 1,000 3DGS scenes (covering furnished indoor spaces, concert halls, amusement parks, etc.), equipped with dense object-level annotations — totaling over 554k object instances across 755 categories.
+                </li>
+                <li>
+                  <b><img src="static/images/icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> <span class="mathvista">SAGE-Bench</span>:</b> The first VLN benchmark built entirely on 3DGS, featuring 2 million trajectory–instruction pairs (generated via a hierarchical pipeline), three novel navigation-continuity evaluation metrics, 554k detailed collision bodies, semantic maps, and diverse robot APIs.
+                </li>
+
+            </p>
+
+            <div class="content has-text-centered">
+              <img src="static/images/Introduction.png" alt="algebraic reasoning" width="90%"/><br>
+              Traditional 3DGS <b>vs.</b> Our work<br>
+            </div>
+
+          </div>
+
+          <h2 class="title is-3">Pipeline</h2>
+          <div class="content has-text-justified">
+            <div class="content has-text-centered">
+              <img src="static/images/SAGE-3D.png" alt="arithmetic reasoning" width="100%"/><br>
+                Pipeline of <img src="static/images/icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/><span class="mathvista">SAGE-3D</span>.
+            </div>
+            <p>
+
+                To upgrade 3DGS into an executable embodied environment, SAGE-3D relies on two key pipelines that address traditional 3DGS’s semantic and physical limitations:
+                <li>
+                  <b>Object-Level Semantic Grounding:</b> We start with artist-created mesh scenes (residential interiors, public spaces like concert halls), render ~3,000 camera views per scene to convert meshes to 3DGS via the GSplat pipeline. We then add double-verified object-level annotations (755 categories, instance IDs, 3D bounding boxes) to form InteriorGS (1k scenes, 554k+ objects), and generate 2D semantic top-down maps by projecting 3D objects (refined into irregular masks via convex hull) to support VLN instruction creation.
+                </li>
+                <li>
+                  <b>Physics-Aware Execution Jointing:</b> We build a <b>3DGS–Mesh Hybrid Representation</b> — we use CoACD to decompose original artist meshes into collision bodies (rigid shapes for physics), paired with 3DGS (for photorealistic rendering) in a USDA scene. We also expose robot APIs for discrete/continuous control, provide synchronized multi-modal observations, and cache collision bodies for fast, stable evaluation.
+                </li>
+
+            </p>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Model SECTION -->
+<section class="hero is-light is-small">
+  <div class="hero-body has-text-centered">
+  <h1 class="title is-1 mathvista">
+      <img src="static/images/icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/>
+      <span class="mathvista">SAGE-Bench</span>
+  </h1>
+  </div>
+</section>
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered has-text-centered">
+      <!-- <div class="column is-full-width has-text-centered"> -->
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Overview</h2>
+          <div class="content has-text-justified">
+            <p>
+              SAGE-Bench is the pioneering VLN benchmark built on 3DGS, featuring 2 million instruction–trajectory pairs and 554k detailed collision bodies. Its core highlights lie in the hierarchical instruction system and three novel navigation natural continuity metrics, which effectively support the evaluation of VLN models in complex scenarios.
+            </p>
+            <ul style="list-style-type: disc; margin-left: 2em; margin-top: 1em; margin-bottom: 1em;">
+              <li style="margin-bottom: 1em;">
+                <b>Hierarchical Instruction:</b> A two-level scheme tailored for realistic navigation evaluation. High-level instructions focus on task semantics and human intent, covering five categories: Add Object (introducing causal objects for logical navigation), Scenario Driven (embedding situational motives like daily needs), Relative Relationship (distinguishing targets via spatial relations such as "next to"), Attribute-based (identifying targets through perceivable attributes like color or state), and Area-based (directing to functional areas instead of specific objects). Low-level instructions prioritize control and kinematic evaluation, including primitive actions (e.g., forward moves, in-place rotation) and single-goal point-to-point navigation—serving as the basic execution foundation for high-level semantic tasks.
+              </li>
+              <li>
+                <b>Navigation Natural Continuity Metrics:</b> Three dedicated metrics addressing the limitations of traditional evaluation methods in continuous motion assessment:
+                <ul style="list-style-type: circle; margin-left: 2em; margin-top: 0.5em;">
+                  <li><b>Continuous Success Ratio (CSR):</b> Beyond endpoint-only 0/1 Success Rate (SR), it calculates the proportion of time the agent stays within the permissible corridor around the reference path, reflecting goal-consistent behavior throughout navigation.</li>
+                  <li><b>Integrated Collision Penalty (ICP):</b> Unlike simple Collision Rate (CR), it integrates collision intensity over time to measure time-averaged collision intensity, capturing both collision frequency and duration.</li>
+                  <li><b>Path Smoothness (PS):</b> Evaluated via the variance of consecutive heading changes, with higher values indicating smoother paths—reducing abrupt turns and improving real-robot navigation feasibility.</li>
+                </ul>
+              </li>
+            </ul>
+            <div class="content has-text-centered">
+              <img src="static/images/SAGE-Bench.png" alt="arithmetic reasoning" width="100%"/><br>
+                Overview of <img src="static/images/icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> <span class="mathvista">SAGE-Bench</span>.
+            </div>
+          </div>
+
+          <h2 class="title is-3">Benchmark Results</h2>
+          <div class="content has-text-justified">
+            <div class="content has-text-centered">
+              <img src="static/images/results1.png" alt="arithmetic reasoning" width="100%"/><br>
+              Results of <img src="static/images/icon.png" style="width:1.0em;vertical-align: middle" alt="Logo"/> <span class="mathvista">SAGE-Bench</span>.
+            </div>
+          </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- RESULTS SECTION -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-3 has-text-centered">BibTeX</h2>
+    <pre><code>
+@misc{miao2025physicallyexecutable3dgaussian,
+      title={Towards Physically Executable 3D Gaussian for Embodied Navigation},
+      author={Bingchen Miao and Rong Wei and Zhiqi Ge and Xiaoquan sun and Shiqi Gao and Jingzhe Zhu and Renhan Wang and Siliang Tang and Jun Xiao and Rui Tang and Juncheng Li},
+      year={2025},
+      eprint={2510.21307},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.21307},
+}
+    </code></pre>
+  </div>
+</section>
+ 
+<footer class="footer">
+    <div class="content has-text-centered">
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+<p style="font-size: 14px;">
+  This website is adapted from <a href="https://nerfies.github.io/">Nerfies</a> and <a href="https://physbench.github.io/">PhysBench</a>, licensed under a <a rel="license"
+                                              href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+  Commons Attribution-ShareAlike 4.0 International License</a>.
+</p>
+        </div>
+      </div>
+    </div>
+</footer>
+
+</body>
+</html>
